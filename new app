@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory Board</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Business Directory Board</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#upload">Upload Your Business</a></li>
+            <li><a href="#browse">Browse Businesses</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="search">
+            <h2>Search Businesses</h2>
+            <input type="text" id="searchInput" placeholder="Search for businesses...">
+            <button onclick="searchBusinesses()">Search</button>
+            <div id="searchResults"></div>
+        </section>
+        
+        <section id="upload">
+            <h2>Upload Your Business</h2>
+            <form id="uploadForm">
+                <label for="businessName">Business Name:</label>
+                <input type="text" id="businessName" required>
+                
+                <label for="businessDescription">Description:</label>
+                <textarea id="businessDescription" required></textarea>
+                
+                <label for="businessCategory">Category:</label>
+                <input type="text" id="businessCategory" required>
+                
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        
+        <section id="browse">
+            <h2>Browse Businesses</h2>
+            <div id="businessList"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Business Directory Board</p>
+    </footer>
+
+    <script>
+        // Add your JavaScript code here
+        function searchBusinesses() {
+            // Implement search functionality
+        }
+
+        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Implement form submission logic
+        });
+
+        // Implement function to load and display businesses
+    </script>
+</body>
+</html>
